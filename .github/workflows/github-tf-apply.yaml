@@ -21,9 +21,9 @@ on:
       - 'nonproduction'
 
 env:
-  PROJECT_ID: "prj-b-cicd-wif-gh-d710"
-  TF_BACKEND: "bkt-prj-b-seed-tfstate-b327"
-  TF_VAR_gh_token: "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"
+  PROJECT_ID: ${{ secrets.PROJECT_ID }}
+  TF_BACKEND: ${{ secrets.TF_BACKEND }}
+  TF_VAR_gh_token: ${{ secrets.TF_VAR_gh_token }}
   TF_IN_AUTOMATION: "true"
 
 jobs:
